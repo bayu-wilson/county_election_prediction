@@ -2,7 +2,7 @@
 Bayu Wilson
 
 ### Disclaimer
-I am not a political scientist and I have not rigorously tested my approach nor have I done an exhaustive literature review. This project is mainly an exercise to practice machine learning, data integration, and geospatial analysis on real, relevant, and current datasets. 
+I am not a political scientist and I have not rigorously tested my approach nor have I done an exhaustive literature review. This project is mainly an exercise to practice machine learning, data integration, and geospatial visualization on real, relevant, and current datasets. 
 
 ### Overview
 The goal of this project is to predict county flips in U.S. presidential elections. First, I created an integrated dataset of election and demographic data over time from the MIT Election lab, the Decennial Census, and the American Community Survey. I then performed feature engineering in order to extract useful predictors for flipped counties. I trained an XGBoost classifier to predict county flips and **achieved a 71% and 98% true positive rate** (recall) for  predicted county flips to democratic and republican candidates respectively. I use the geospatial visualization Python library, [Folium](https://python-visualization.github.io/folium/latest/), to make interactive leaflet maps showing these flipped counties for 2016, 2020, and a prediction for 2024. See figure 1 below or [click here](https://nbviewer.org/github/bayu-wilson/county_election_prediction/blob/main/map.html) to view the map. I purposefully do not try to use this model to predict the winner of the 2024 election. I plan to compare my county-level predictions to the true outcome after the election.
